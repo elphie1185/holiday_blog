@@ -1,14 +1,29 @@
 import React from 'react';
 import Footer from '../views/partials/footer';
+import Tabs from 'react-bootstrap/Tabs';
+import newEntry from './newEntry'; 
+import deleteEntry from './deleteEntry';
+import updateEntry from './updateEntry';
 
 function Compose(){
     return(
         <div>
+        {/* <Tabs defaultActiveKey="homecompose" transition={false} id="noanim-tab-example">
+            <Tab eventKey="compose" title="Compose">
+                <newEntry />
+            </Tab>
+            <Tab eventKey="update" title="Update">
+                <updateEntry />
+            </Tab>
+            <Tab eventKey="delete" title="Delete">
+                <deleteEntry />
+            </Tab>
+        </Tabs> */}
             <div class="compose">
                 <ul class="nav nav-tabs nav-justified">
-                    <li role="presentation" class="active"><a href="#">Create</a></li>
-                    <li role="presentation"><a href="#">Edit</a></li>
-                    <li role="presentation"><a href="#">Delete</a></li>
+                    <li role="presentation" class="active"><a href="/compose">Create</a></li>
+                    <li role="presentation"><a href="/compose/edit">Edit</a></li>
+                    <li role="presentation"><a href="/compose/delete">Delete</a></li>
                 </ul>
                 {/* <form action="/compose" method="post">
                     <select class="custom-select col-6" id="inlineFormCustomSelectPref">
