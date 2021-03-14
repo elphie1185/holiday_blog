@@ -1,10 +1,12 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Home from '../component/views/home';
 import About from '../component/views/about';
 import Travel from '../component/views/travel';
 import Compose from '../component/views/compose';
 import Header from "./views/partials/header";
+import '../styles/Nav.css';
+
 
 function App() {
     return (
@@ -20,4 +22,4 @@ function App() {
     )
 };
 
-export default App; 
+export default App;

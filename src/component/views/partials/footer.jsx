@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
 function Footer (){
     return(
@@ -11,4 +10,4 @@ function Footer (){
     )
 };
 
-export default Footer; 
+export default Footer;
